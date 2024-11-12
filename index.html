@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="cont-general">
+        <div id="panel-lateral" class="">
+            <div class="row">
+                <h4> Menu </h4>
+                <button id="menu2" onclick="panelLateral()"><i class="fa-solid fa-circle-xmark"></i></button>
+            </div>    
+        <ul class="lista">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Productos</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Contactos</a></li>
+        </ul>
+        </div>
+        <div id="panel-superior" class="">
+            <div class="row">
+                <h4> Video </h4>
+                <button id="menu" onclick="panelSuperior()"><i class="fa-solid fa-circle-xmark"></i></button>
+            </div>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mNillj9kU0E?si=nzdsV5m1ljCK7qtt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>    
+        <div class="left">
+            <h2 >INTERACIONES</h2>
+            <button onclick="circulo()">CIRCULO</button>
+            <button onclick="rombo()">ROMBO</button>
+            <button onclick="cambiocolor()">FONDO COLOR</button>
+            <button onclick="cambioimagen()">FONDO IMAGEN</button>
+            <button onclick="arriba()">TOP</button>
+            <button onclick="izquierda()">LEFT</button>
+            <button onclick="abajo()">BOTTON</button>
+            <button onclick="derecha()">RIGHT</button>
+            <button onclick="diagonal()">DIAGONAL</button>
+            <button onclick="animacions()">ANIMATION</button>
+            <button onclick="degradado()">FONDO DEGRADADO</button>
+            <button onclick="Estrella()">ESTRELLA</button>
+            <button onclick="panelLateral()">PANEL LATERAL</button>
+            <button onclick="panelSuperior()">PANEL SUPERIOR</button>
+        </div>
+        <div class="right">
+            <h2 id="titulo">FIGURA</h2>
+
+            <div id="figura"></div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
